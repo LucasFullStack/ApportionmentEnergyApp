@@ -1,5 +1,7 @@
 {
   "name": "EnergyReportApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
