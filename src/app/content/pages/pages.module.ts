@@ -13,7 +13,7 @@ const routes: Routes = [
     component: PagesPage
   },
    { path: 'login', loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)},
-   { path: 'report', loadChildren: () => import('./report/report.module').then( m => m.ReportPageModule)},
+   { path: 'apportionment', loadChildren: () => import('./apportionment/apportionment.module').then( m => m.ApportionmentPageModule)},
 
 ];
 

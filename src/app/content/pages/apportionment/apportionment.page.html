@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Apportionment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-list>
+      <ion-item *ngFor="let apportionment of apportionments">
+          <ion-thumbnail item-left>
+          <img [src]="apportionment.avatar"/>
+        </ion-thumbnail>
+        <ion-label>
+          <label>
+              {{apportionment.name}}
+          </label>
+          <p>
+            <label>
+                {{apportionment.category}}
+            </label>
+          </p>
+    
+          <p>
+              <label>
+                  {{apportionment.address}}
+              </label>
+            </p>
+    
+        </ion-label>
+    
+        <ion-label color="danger" style="text-align: right">
+               - R$  {{apportionment.value}}
+          </ion-label>
+    
+        
+      </ion-item>
+    </ion-list>
+  
+</ion-content>
